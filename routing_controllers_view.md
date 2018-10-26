@@ -1,17 +1,17 @@
-# Routing,Controllers and View Questions
+# Routing, Controllers and View Questions
 
 #### Provide an example of RESTful routing and controller.
 
 Rest stands for representational state transfer. It is an architecture for designing networked applications over (in most cases) the HTTP protocol.
 It uses HTTP verbs (GET,POST,PUT,DELETE) in combination with URLs to perform all of the CRUD actions on a resource.
 
-GET /books, gets all books @Books=Book.all in index action
-GET /books/new, used to show the create book form, in the new action
-POST /books, creates a new book resource @Book=Book.create(book_params) in create action
-PUT /book/:id, used to update book, @Book=Book.update(id, book_params) in update action
-DELETE /book/:id/destroy, used to delete book, Book.destroy(id) in destroy action
-GET /book/:id, used to show book details, @Book=Book.find(id) in show action
-GET /book/:id/edit, used to show the edit form @Book=Book.find(id) in the edit action
+- GET /books, gets all books @Books=Book.all in index action
+- GET /books/new, used to show the create book form, in the new action
+- POST /books, creates a new book resource @Book=Book.create(book_params) in create action
+- PUT /book/:id, used to update book, @Book=Book.update(id, book_params) in update action
+- DELETE /book/:id/destroy, used to delete book, Book.destroy(id) in destroy action
+- GET /book/:id, used to show book details, @Book=Book.find(id) in show action
+- GET /book/:id/edit, used to show the edit form @Book=Book.find(id) in the edit action
 
 
 
@@ -40,7 +40,7 @@ class LoginsController < ApplicationController
 end
 ```
 
-What are Strong Parameters?
+#### What are Strong Parameters?
 Strong parameters allow only parameters which have been explicitly permitted to be assigned to objects when performing mass assignment.
 
 ```
