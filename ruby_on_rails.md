@@ -24,7 +24,6 @@ From rails guide.
 - Action caching: Page Caching cannot be used for actions that have before filters - for example, pages that require authentication. This is where Action Caching comes in. Action Caching works like Page Caching except the incoming web request hits the Rails stack so that before filters can be run on it before the cache is served. This allows authentication and other restrictions to be run while still serving the result of the output from a cached copy. This has been replaced since rails 4. 
 
 - Fragment Caching: Dynamic web applications usually build pages with a variety of components not all of which have the same caching characteristics. When different parts of the page need to be cached and expired separately you can use Fragment Caching.
-
 Fragment Caching allows a fragment of view logic to be wrapped in a cache block and served out of the cache store when the next request comes in.
 
 - Low-level caching: Sometimes you need to cache a particular value or query result instead of caching view fragments. Rails' caching mechanism works great for storing any kind of information.
